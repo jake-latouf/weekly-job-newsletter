@@ -1,0 +1,51 @@
+# config.yaml template
+
+# API keys and other settings (if applicable)
+api_key: your_api_key
+
+# city to search
+location:
+
+# these are the settings jopscraper.py will generate matches based on. Most of this will be parsed from the job description
+match_criteria:
+  # list of job titles to match (required)
+  titles:
+    -
+    -
+  # list of keywords to look for in the description (optional)
+  keywords:
+    -
+    -
+  # years of experience to pull from the job description (required)
+  years_of_xp: 
+
+  # remote/hybrid/onsite (optional)
+  remote_work:
+    -
+    -
+
+  # if you only wish to see listings posted after a specific time period you can adjust the settings here (optional)
+  listing_age:
+    -
+    -
+
+  # education requirements for matching (optional)
+  degree_requirement:
+    -
+    -
+
+  # preferred job locations (required)
+  locations:
+    -
+    -
+
+  # required skills (optional)
+  skills:
+    -
+    -
+
+# email address (required) to send matches to
+email_address: user@example.com
+# Day of the week to receive the email (0 is Sunday, 1 is Monday, and so on)
+# Set it to -1 to disable weekly emails
+weekly_email_day: 1  # Default: Monday
